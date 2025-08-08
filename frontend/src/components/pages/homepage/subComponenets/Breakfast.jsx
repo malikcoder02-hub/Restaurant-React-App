@@ -3,18 +3,16 @@ import { foodItems } from '../../../../services/menuItems';
 import { FoodItemsCard } from '../../../common/foodItemsCard';
 const Breakfast = () => {
   return (
-    <div>
-        {foodItems.filter(item => item.type === "breakfast").map((item, index) => (
-            <FoodItemsCard
-                key={index}
-                image={item.image}
-                title={item.title}
-                description={item.description}
-                price={item.price}
-            />
-        ))}
-
-      
+    <div className="grid grid-cols-2 gap-4 w-full">
+      {foodItems.filter(item => item.type === "breakfast").map((item, index) => (
+        <FoodItemsCard
+          key={index}
+          image={item.image}
+          title={item.title}
+          description={item.description}
+          price={item.price}
+        />
+      ))}
     </div>
   )
 }

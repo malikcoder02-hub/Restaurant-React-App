@@ -1,6 +1,6 @@
 import React from 'react'
 import Breakfast from './Breakfast';
-import Launch from './Launch';
+import Lunch from './Lunch';
 import Dinner from './Dinner';
 const foodMenuLinks = [
   {
@@ -9,9 +9,9 @@ const foodMenuLinks = [
     title: "Breakfast",
     description: "Popular",
   },
-  { type: "launch",
+  { type: "lunch",
     image: "/images/lunch_icon.svg",
-    title: "Launch",
+    title: "Lunch",
     description: "Special",
   },
   {
@@ -25,7 +25,7 @@ const foodMenuLinks = [
 
 
 const MenuSection = () => {
-  const [type, setType] = React.useState("Breakfast");
+  const [type, setType] = React.useState("breakfast");
   const activeLink = "border-b-3 border-black text-black";
   const inactiveLink = "border-b-3 border-gray-300 text-gray-600";
 
@@ -51,9 +51,9 @@ const handleTypeChange = (newType) => {
           <div
             key={index}
             className={`flex items-center pb-1 justify-center gap-2 ${
-              type === item.title ? activeLink : inactiveLink
+              type === item.type ? activeLink : inactiveLink
             } hover:border-b-3 hover:border-black transition-all duration-300`}
-            onClick={() => handleTypeChange(item.title)}
+            onClick={() => handleTypeChange(item.type)}
           >
             <img src={item.image} alt={item.title} className="w-16 h-16" />
             <div className="gap-0 flex flex-col items-start justify-center">
@@ -64,10 +64,10 @@ const handleTypeChange = (newType) => {
         ))}
       </div>
       {/* Menu Items Section */}
-      <div>
-        {type === "Breakfast" && <Breakfast />}
-        {type === "Launch" && <Launch />}
-        {type === "Dinner" && <Dinner />}
+      <div className="flex w-[70%] gap-5 self-center items-center justify-center">
+        {type === "breakfast" && <Breakfast />}
+        {type === "lunch" && <Lunch />}
+        {type === "dinner" && <Dinner />}
       </div>
     </section>
   );

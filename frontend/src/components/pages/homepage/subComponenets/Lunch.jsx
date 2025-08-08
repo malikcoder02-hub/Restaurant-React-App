@@ -1,20 +1,21 @@
 import React from 'react'
 import { foodItems } from '../../../../services/menuItems';
 import { FoodItemsCard } from '../../../common/foodItemsCard';
-const Dinner = () => {
+
+const Lunch = () => {
   return (
     <div className="grid grid-cols-2 gap-4 w-full">
-      {foodItems.filter(item => item.type === "dinner").map((item, index) => (
-        <FoodItemsCard
-          key={index}
-          image={item.image}
+      {foodItems.filter(item => item.type === "lunch").map((item, index) => (
+        <FoodItemsCard 
+          key={index} 
           title={item.title}
-          description={item.description}
-          price={item.price}
+          image={item.image} 
+          price={item.price} 
+          description={item.description} 
         />
       ))}
     </div>
   )
 }
 
-export default Dinner
+export default Lunch

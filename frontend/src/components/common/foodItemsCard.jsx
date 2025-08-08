@@ -2,19 +2,21 @@ import React from 'react'
 
 export const FoodItemsCard = ({ image, title, description, price }) => {
   return (
-    <div class="flex items-center gap-4 border-b border-gray-200 p-4 hover:border-b-2 hover:border-black transition-all duration-300 max-w-md">
+    <div class="flex items-center gap-2 border-b border-gray-200 p-4 hover:scale-[1.06] hover:drop-shadow-2xl hover:bg-gray-100  transition-all duration-300">
       <img
         src={image}
         class="w-16 h-16 object-cover"
       />
 
-      <div>
+      <div className='flex flex-col w-[300px]'>
+        <div className='flex flex-row justify-between'>
         <h3 class="font-bold text-lg text-gray-900">{title}</h3>
-        <span class="text-orange-500 font-semibold text-sm">${price}</span>
-        <br />
+        <span class="text-orange-500 font-semibold text-lg">${price}</span>
+        </div>
         <p class="text-gray-500 text-sm">
           {description}
         </p>
+        
       </div>
     </div>
   );
