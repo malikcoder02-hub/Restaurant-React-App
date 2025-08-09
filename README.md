@@ -34,6 +34,6 @@ This is the frontend for a Restaurant and Booking web application built with Rea
 - The "Book Appointment" button in the header opens a modal for reservations.
 - Menu items are organized in a grid for better visual presentation.
 
----
 
-Feel free to customize and extend the app for your restaurant's needs!
+![Alt text](about.png)
+![Alt text](menu.png)
