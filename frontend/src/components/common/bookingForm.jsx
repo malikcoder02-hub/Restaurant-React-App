@@ -61,7 +61,7 @@ export default function ReservationForm() {
   };
 
   return (
-    <div className="flex flex-row justify-center items-center bg-[linear-gradient(to_right,rgba(0,0,0,80%),rgba(0,0,0,85%)),url('/images/hotel_background.png')]">
+    <div className="flex flex-row justify-center items-center bg-[rgba(0,0,0,80%)]">
       <form
         onSubmit={handleSubmit}
         className="w-full max-w-md p-6 text-white rounded-lg shadow-lg space-y-2"                  
@@ -74,6 +74,7 @@ export default function ReservationForm() {
           <input
             type="text"
             value={formData.name}
+            placeholder="Enter your name"
             onChange={(e) => setFormData({ ...formData, name: e.target.value })}
             className="w-full p-2 border border-white rounded"
           />
@@ -85,6 +86,7 @@ export default function ReservationForm() {
           <label className="block font-semibold mb-1">Email*</label>
           <input
             type="email"
+            placeholder="Enter your email"
             value={formData.email}
             onChange={(e) => setFormData({ ...formData, email: e.target.value })}
             className="w-full p-2 border border-white rounded"
@@ -109,13 +111,14 @@ export default function ReservationForm() {
 
         {/* Time */}
         <div>
-          <label className="block font-semibold mb-1">Time (HH:MM)*</label>
+          <label htmlFor="time" className="block font-semibold mb-1">Time (HH:MM)*</label>
           <input
+          id="time"
             type="time"
             placeholder="HH:MM"
             value={formData.time}
             onChange={(e) => setFormData({ ...formData, time: e.target.value })}
-            className="w-full p-2 border border-white rounded"
+            className="w-full p-2 border border-white rounded text-white"
           />
           {errors.time && <p className="text-red-500 text-sm">{errors.time}</p>}
         </div>
@@ -125,6 +128,7 @@ export default function ReservationForm() {
           <label className="block font-semibold mb-1">Special Request</label>
           <textarea
             value={formData.specialRequest}
+            placeholder="Any special requests?"
             onChange={(e) =>
               setFormData({ ...formData, specialRequest: e.target.value })
             }
