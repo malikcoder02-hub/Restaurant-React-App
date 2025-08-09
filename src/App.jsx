@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import React from 'react';
 import Header from './components/common/header';
 import Homepage from './components/pages/homepage';
@@ -10,7 +10,7 @@ function App() {
 
   return (
     <>
-    <BrowserRouter>
+    <HashRouter>
       {/* <Router> */}
         <Header />
         <Routes>
@@ -19,7 +19,7 @@ function App() {
           {/* <Route path="/book-table" element={<BookTable />} /> */}
         </Routes>
       {/* </Router> */}
-      </BrowserRouter>
+      </HashRouter>
     </>
   );
 }
