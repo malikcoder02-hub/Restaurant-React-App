@@ -1,5 +1,6 @@
 import React from 'react'
-const Image = "/images/biryani.png";
+const Image = "/images/chicken.png";
+
 import { PrimaryButton, SecondaryButton } from '../../../common/buttons';
 
 const HeroSection = () => {
@@ -8,9 +9,13 @@ const HeroSection = () => {
       {/* Text Section */}
       <div className="flex flex-col items-start justify-center pl-5 gap-5">
         <h1 className="text-6xl font-bold text-start text-weight-700 ">
-          Welcome to Our <br />Restaurant
+          Welcome to Our <br />
+          Restaurant
         </h1>
-        <p className='text-xl'>Experience delicious food, warm ambiance, <br />and unforgettable moments—welcome to our restaurant.</p>
+        <p className="text-xl">
+          Experience delicious food, warm ambiance, <br />
+          and unforgettable moments—welcome to our restaurant.
+        </p>
         {/* Buttons */}
         <div className="flex flex-row items-center gap-5 w-full">
           <PrimaryButton>Book A Table</PrimaryButton>
@@ -19,8 +24,12 @@ const HeroSection = () => {
       </div>
 
       {/* Image Section */}
-      <div className='flex items-center justify-center w-120 h-120'>
-        <img src={Image} alt="Restaurant" />
+      <div className="flex items-center justify-center w-140 h-140">
+        <img
+          src={Image}
+          className="transform rotate-[-20deg] hover:rotate-0 transition-all duration-500"
+          alt="Restaurant"
+        />
       </div>
     </section>
   );

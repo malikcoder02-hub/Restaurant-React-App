@@ -30,7 +30,7 @@ export const foodItems = [
   },
   {
     type: "breakfast",
-    image: "https://images.unsplash.com/photo-1600718378995-52c3b0046e6c",
+    image: "https://www.designeatrepeat.com/wp-content/uploads/2024/11/chocolate-chip-waffles-featured.jpg",
     title: "Waffles",
     description: "Belgian waffles served with fresh berries and cream.",
     price: 6.80
@@ -44,7 +44,7 @@ export const foodItems = [
   },
   {
     type: "breakfast",
-    image: "https://images.unsplash.com/photo-1523986371872-9d3ba2e2f642",
+    image: "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_1:1/k%2FPhoto%2F2022-11-how-to-make-cream-cheese%2FHOW-TO-MAKE-CREAM-CHEESE_083",
     title: "Bagel with Cream Cheese",
     description: "Freshly baked bagel with smooth cream cheese.",
     price: 3.75
@@ -65,7 +65,7 @@ export const foodItems = [
   },
   {
     type: "breakfast",
-    image: "https://images.unsplash.com/photo-1626082927389-6f7fef2a2e25",
+    image: "https://cdn.loveandlemons.com/wp-content/uploads/2024/08/french-toast-recipe.jpg",
     title: "French Toast",
     description: "Thick-cut bread soaked and grilled with cinnamon sugar.",
     price: 6.40
@@ -74,70 +74,70 @@ export const foodItems = [
   // 🍔 Lunch
   {
     type: "lunch",
-    image: "https://images.unsplash.com/photo-1604908177522-4329a70d4a4a",
+    image: "https://images.immediate.co.uk/production/volatile/sites/30/2025/04/Crispiest-buttermilk-fried-chicken-burgers-90854e5.jpg",
     title: "Chicken Burger",
     description: "Juicy grilled chicken patty with fresh lettuce and tomato.",
     price: 8.99
   },
   {
     type: "lunch",
-    image: "https://images.unsplash.com/photo-1617196039897-9eecb49b8e6f",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTL1R8p3R9He4pjuRnYbnWhjwKj8aK1hIIi3g&s",
     title: "Caesar Salad",
     description: "Crisp romaine lettuce with Caesar dressing and croutons.",
     price: 6.25
   },
   {
     type: "lunch",
-    image: "https://images.unsplash.com/photo-1598514982911-1e5b678f5d2d",
+    image: "https://www.tasteofhome.com/wp-content/uploads/2025/04/Turkey-Club-Sandwich_EXPS_FT25_278726_EC_0408_5.jpg",
     title: "Club Sandwich",
     description: "Triple-decker sandwich with turkey, bacon, and mayo.",
     price: 7.80
   },
   {
     type: "lunch",
-    image: "https://images.unsplash.com/photo-1550547660-d9450f859349",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT88i1gMtaKJV44NCpMr6YKMvg7zjQ3ER4vZg&s",
     title: "Margherita Pizza",
     description: "Classic pizza with tomato, mozzarella, and basil.",
     price: 9.50
   },
   {
     type: "lunch",
-    image: "https://images.unsplash.com/photo-1598026693588-74f1d88c1a29",
+    image: "https://www.ourhappymess.com/wp-content/uploads/2024/06/Fish-Tacos-with-Mango-Salsa-square-featured.jpg",
     title: "Fish Tacos",
     description: "Grilled fish with cabbage slaw and spicy mayo.",
     price: 8.40
   },
   {
     type: "lunch",
-    image: "https://images.unsplash.com/photo-1589927986089-35812388d1d1",
+    image: "https://midwestfoodieblog.com/wp-content/uploads/2023/07/chicken-alfredo-1.jpg",
     title: "Pasta Alfredo",
     description: "Creamy Alfredo pasta with parmesan and herbs.",
     price: 10.20
   },
   {
     type: "lunch",
-    image: "https://images.unsplash.com/photo-1617191519105-4e3ec5b6ef4c",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR0a41wrp2_B_cJjYEc6M0RkK-L9AUvzT8O_g&s",
     title: "Beef Wrap",
     description: "Soft tortilla wrap with grilled beef and veggies.",
     price: 7.30
   },
   {
     type: "lunch",
-    image: "https://images.unsplash.com/photo-1605475128024-9e06a0b2a1a2",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqL7EP_U14Z7g1KaTiKcX_ROPAbSpQGI5-AQ&s",
     title: "Sushi Platter",
     description: "Assortment of fresh sushi rolls and sashimi.",
     price: 12.99
   },
   {
     type: "lunch",
-    image: "https://images.unsplash.com/photo-1617196039650-f1d63c5f0d2c",
+    image: "https://images.themodernproper.com/production/posts/GreekSalad_9.jpg?w=1200&h=1200&q=60&fm=jpg&fit=crop&dm=1718650734&s=70119bf37604d243d0729db7f4cda445",
     title: "Greek Salad",
     description: "Fresh veggies with feta cheese and olive oil dressing.",
     price: 6.80
   },
   {
     type: "lunch",
-    image: "https://images.unsplash.com/photo-1625944192463-13c2a2391a9c",
+    image: "https://www.wellplated.com/wp-content/uploads/2016/03/Black-Bean-Vegan-Burger-Recipe.jpg",
     title: "Veggie Burger",
     description: "Plant-based patty with fresh lettuce and tomato.",
     price: 8.20
@@ -153,63 +153,63 @@ export const foodItems = [
   },
   {
     type: "dinner",
-    image: "https://images.unsplash.com/photo-1617196039817-3b8b6cbd34a4",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVq1BiyxdupvUVw6tyNLITT0CTfXkQ3u2v7A&s",
     title: "Steak & Fries",
     description: "Tender sirloin steak served with crispy golden fries.",
     price: 18.50
   },
   {
     type: "dinner",
-    image: "https://images.unsplash.com/photo-1625937328794-6f0e2a8d8ad2",
+    image: "https://diethood.com/wp-content/uploads/2021/02/lobster-tails-6.jpg",
     title: "Lobster Tail",
     description: "Buttery lobster tail served with garlic mashed potatoes.",
     price: 22.00
   },
   {
     type: "dinner",
-    image: "https://images.unsplash.com/photo-1605454746264-7b4f94ba76c9",
+    image: "https://tastesbetterfromscratch.com/wp-content/uploads/2023/03/Chicken-Parmesan-1.jpg",
     title: "Chicken Parmesan",
     description: "Breaded chicken breast with marinara and mozzarella.",
     price: 13.40
   },
   {
     type: "dinner",
-    image: "https://images.unsplash.com/photo-1601312372652-0e3c47a1a1d3",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSG59GdJdTNUlZmV5pebKZsbmhLLXTGfy7W0Q&s",
     title: "Seafood Paella",
     description: "Spanish rice dish with shrimp, mussels, and squid.",
     price: 16.75
   },
   {
     type: "dinner",
-    image: "https://images.unsplash.com/photo-1598515213643-fd3c84b9c7d1",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJuizypQdhtT5mV2QcfpFvLoxkDDG2CMtBHA&s",
     title: "Ribeye Steak",
     description: "Juicy ribeye grilled to your preferred doneness.",
     price: 19.90
   },
   {
     type: "dinner",
-    image: "https://images.unsplash.com/photo-1589927985981-dc2e1f9f1f3a",
+    image: "https://hips.hearstapps.com/hmg-prod/images/roast-chicken-recipe-2-66b231ac9a8fb.jpg?crop=0.8888888888888888xw:1xh;center,top&resize=1200:*",
     title: "Roast Chicken",
     description: "Herb-seasoned roasted chicken with vegetables.",
     price: 12.50
   },
   {
     type: "dinner",
-    image: "https://images.unsplash.com/photo-1617196039665-58e91fdf85a0",
+    image: "https://www.tamingtwins.com/wp-content/uploads/2025/01/spaghetti-bolognese-10.jpg",
     title: "Pasta Bolognese",
     description: "Traditional Italian pasta with slow-cooked meat sauce.",
     price: 11.80
   },
   {
     type: "dinner",
-    image: "https://images.unsplash.com/photo-1617191519025-cf1bde7c7b13",
+    image: "https://natashaskitchen.com/wp-content/uploads/2020/08/Vegetable-Stir-Fry-SQ.jpg",
     title: "Vegetable Stir-Fry",
     description: "Fresh vegetables sautéed with soy sauce and garlic.",
     price: 9.50
   },
   {
     type: "dinner",
-    image: "https://images.unsplash.com/photo-1617191519321-7db5c7a8e9f3",
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSeojrqbncracP06Up1Fq03xpKoaC0oHJG30w&s",
     title: "Lamb Chops",
     description: "Grilled lamb chops with rosemary and garlic.",
     price: 17.25
