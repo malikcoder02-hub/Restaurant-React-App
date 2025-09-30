@@ -2,36 +2,36 @@
 
 /* Custom glassmorphism and blur effects */
 .glass-effect {
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .glass-dark {
-  background: rgba(0, 0, 0, 0.3);
+  background: rgba(0, 0, 0, 0.2);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .gradient-bg {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #ff6b35 0%, #f7931e 100%);
 }
 
-.gradient-gold {
-  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+.gradient-warm {
+  background: linear-gradient(135deg, #ff8a00 0%, #e52e71 100%);
 }
 
-.gradient-purple {
-  background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+.gradient-food {
+  background: linear-gradient(135deg, #ff6b35 0%, #ff8e53 50%, #ffa726 100%);
 }
 
 .motion-blur-bg {
   background: 
-    radial-gradient(circle at 20% 80%, rgba(120, 119, 198, 0.3) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(255, 119, 198, 0.3) 0%, transparent 50%),
-    radial-gradient(circle at 40% 40%, rgba(120, 219, 255, 0.3) 0%, transparent 50%);
+    radial-gradient(circle at 20% 80%, rgba(255, 107, 53, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 138, 0, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 40% 40%, rgba(247, 147, 30, 0.3) 0%, transparent 50%);
   animation: float 6s ease-in-out infinite;
 }
 
@@ -40,13 +40,23 @@
   50% { transform: translateY(-20px) rotate(1deg); }
 }
 
+@keyframes bounce-slow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { box-shadow: 0 0 20px rgba(255, 107, 53, 0.3); }
+  50% { box-shadow: 0 0 40px rgba(255, 107, 53, 0.6); }
+}
+
 .hover-lift {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hover-lift:hover {
   transform: translateY(-8px) scale(1.02);
-  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 25px 50px -12px rgba(255, 107, 53, 0.25);
 }
 
 .btn-glass {
@@ -59,11 +69,18 @@
 .btn-glass:hover {
   background: rgba(255, 255, 255, 0.2);
   transform: translateY(-2px);
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 10px 25px rgba(255, 107, 53, 0.3);
 }
 
 .text-gradient {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #ff6b35 0%, #ffa726 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-gradient-warm {
+  background: linear-gradient(135deg, #ff8a00 0%, #e52e71 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -75,7 +92,15 @@
 
 .card-hover:hover {
   transform: translateY(-12px) rotateX(5deg);
-  box-shadow: 0 30px 60px -12px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 30px 60px -12px rgba(255, 107, 53, 0.3);
+}
+
+.food-glow {
+  animation: pulse-glow 3s ease-in-out infinite;
+}
+
+.bounce-slow {
+  animation: bounce-slow 3s ease-in-out infinite;
 }
 
 /* Smooth scrolling */
@@ -93,10 +118,33 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  background: linear-gradient(135deg, #ff6b35 0%, #ffa726 100%);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+  background: linear-gradient(135deg, #ffa726 0%, #ff6b35 100%);
+}
+
+/* Food item animations */
+.food-item-enter {
+  animation: slideInUp 0.6s ease-out;
+}
+
+@keyframes slideInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Warm background patterns */
+.warm-pattern {
+  background-image: 
+    radial-gradient(circle at 25% 25%, rgba(255, 107, 53, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, rgba(255, 138, 0, 0.1) 0%, transparent 50%);
 }

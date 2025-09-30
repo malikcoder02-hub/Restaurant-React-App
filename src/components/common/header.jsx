@@ -22,31 +22,31 @@ const Header = () => {
   return (
     <header className={`fixed top-0 left-0 right-0 z-40 transition-all duration-500 ${
       scrolled 
-        ? 'glass-effect shadow-2xl py-3' 
+        ? 'glass-effect shadow-2xl py-3 border-b border-orange-300/20' 
         : 'bg-transparent py-6'
     }`}>
       <div className="container mx-auto flex justify-between items-center px-6">
         <div className="flex flex-row gap-3 text-2xl font-bold text-white items-center">
-          <div className="w-10 h-10 rounded-full glass-effect flex items-center justify-center">
+          <div className="w-10 h-10 rounded-full glass-effect flex items-center justify-center border border-orange-300/30">
             <img className="h-6 w-6" src="./images/dinner_icon.svg" alt="" />
           </div>
-          <span className="text-gradient">Lumière</span>
+          <span className="text-gradient">Páprika Ház</span>
         </div>
 
         <nav className="hidden md:flex space-x-8 items-center">
           <Link
             to="/"
-            className="text-white hover:text-blue-300 font-semibold transition-all duration-300 relative group"
+            className="text-white hover:text-orange-300 font-semibold transition-all duration-300 relative group"
           >
             Home
-            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-purple-500 group-hover:w-full transition-all duration-300"></span>
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-orange-400 to-yellow-500 group-hover:w-full transition-all duration-300"></span>
           </Link>
           <Link
             to="/contact"
-            className="text-white hover:text-blue-300 font-semibold transition-all duration-300 relative group"
+            className="text-white hover:text-orange-300 font-semibold transition-all duration-300 relative group"
           >
             Contact
-            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-400 to-purple-500 group-hover:w-full transition-all duration-300"></span>
+            <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-orange-400 to-yellow-500 group-hover:w-full transition-all duration-300"></span>
           </Link>
 
           <PrimaryButton onClick={handleModel}>
@@ -56,7 +56,7 @@ const Header = () => {
 
         {/* Mobile menu button */}
         <div className="md:hidden">
-          <button className="text-white p-2 glass-effect rounded-lg">
+          <button className="text-white p-2 glass-effect rounded-lg border border-orange-300/30">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
             </svg>
