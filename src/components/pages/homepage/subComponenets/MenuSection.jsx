@@ -2,72 +2,88 @@ import React from 'react'
 import Breakfast from './Breakfast';
 import Lunch from './Lunch';
 import Dinner from './Dinner';
+
 const foodMenuLinks = [
   {
-    type:"breakfast",
+    type: "breakfast",
     image: "/images/tea_cup.svg",
     title: "Breakfast",
-    description: "Popular",
+    description: "Morning",
   },
-  { type: "lunch",
+  { 
+    type: "lunch",
     image: "/images/lunch_icon.svg",
     title: "Lunch",
-    description: "Special",
+    description: "Afternoon",
   },
   {
-    type:"dinner",
+    type: "dinner",
     image: "/images/dinner_icon.svg",
     title: "Dinner",
-    description: "Lovely",
+    description: "Evening",
   }
 ];
 
-
-
 const MenuSection = () => {
   const [type, setType] = React.useState("breakfast");
-  const activeLink = "border-b-3 border-black text-black";
-  const inactiveLink = "border-b-3 border-gray-300 text-gray-600";
 
-
-const handleTypeChange = (newType) => {
+  const handleTypeChange = (newType) => {
     setType(newType);
   };
 
-
-
-
   return (
-    <section className="flex flex-col items-center justify-center w-full py-20 gap-10 bg-gray-100">
-      <span className="text-orange-500 text-lg font-bold mb-2 flex items-center gap-2">
-        -- Food Menu --
-      </span>
-      <h2 className="text-3xl lg:text-5xl font-extrabold mb-4 text-black">
-        Most Popular Items
-      </h2>
-      {/* Buttons Section */}
-      <div className="grid grid-cols-3 gap-5 self-center w-[50%] items-center justify-center">
-        {foodMenuLinks.map((item, index) => (
-          <div
-            key={index}
-            className={`flex items-center pb-1 justify-center gap-2 ${
-              type === item.type ? activeLink : inactiveLink
-            } hover:border-b-3 hover:border-black transition-all duration-300`}
-            onClick={() => handleTypeChange(item.type)}
-          >
-            <img src={item.image} alt={item.title} className="w-16 h-16" />
-            <div className="gap-0 flex flex-col items-start justify-center">
-              <span className="text-gray-600 text-xl">{item.description}</span>
-              <h3 className=" font-bold text-2xl text-black">{item.title}</h3>
-            </div>
+    <section className="relative py-20 overflow-hidden">
+      {/* Background */}
+      <div className="absolute inset-0 bg-gradient-to-b from-white to-gray-100"></div>
+      <div className="absolute inset-0 motion-blur-bg opacity-20"></div>
+      
+      <div className="relative z-10 container mx-auto px-6">
+        {/* Section Header */}
+        <div className="text-center mb-16 space-y-4">
+          <div className="flex items-center justify-center gap-3">
+            <div className="w-16 h-0.5 bg-gradient-to-r from-transparent to-blue-400"></div>
+            <span className="text-blue-500 text-lg font-bold">Our Menu</span>
+            <div className="w-16 h-0.5 bg-gradient-to-l from-transparent to-purple-500"></div>
           </div>
-        ))}
-      </div>
-      {/* Menu Items Section */}
-      <div className="flex w-[70%] gap-5 self-center items-center justify-center">
-        {type === "breakfast" && <Breakfast />}
-        {type === "lunch" && <Lunch />}
-        {type === "dinner" && <Dinner />}
+          <h2 className="text-4xl lg:text-5xl font-extrabold text-gray-900">
+            Culinary <span className="text-gradient">Masterpieces</span>
+          </h2>
+          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+            Discover our carefully curated selection of dishes, crafted with passion and served with pride
+          </p>
+        </div>
+
+        {/* Menu Navigation */}
+        <div className="flex justify-center mb-16">
+          <div className="glass-effect rounded-2xl p-2 inline-flex gap-2">
+            {foodMenuLinks.map((item, index) => (
+              <button
+                key={index}
+                className={`flex items-center gap-3 px-6 py-4 rounded-xl transition-all duration-300 ${
+                  type === item.type 
+                    ? 'bg-gradient-to-r from-blue-500 to-purple-600 text-white shadow-lg' 
+                    : 'text-gray-700 hover:bg-white/50'
+                }`}
+                onClick={() => handleTypeChange(item.type)}
+              >
+                <img src={item.image} alt={item.title} className="w-8 h-8" />
+                <div className="text-left">
+                  <div className="text-sm opacity-75">{item.description}</div>
+                  <div className="font-bold">{item.title}</div>
+                </div>
+              </button>
+            ))}
+          </div>
+        </div>
+
+        {/* Menu Items */}
+        <div className="max-w-6xl mx-auto">
+          <div className="glass-effect rounded-3xl p-8">
+            {type === "breakfast" && <Breakfast />}
+            {type === "lunch" && <Lunch />}
+            {type === "dinner" && <Dinner />}
+          </div>
+        </div>
       </div>
     </section>
   );

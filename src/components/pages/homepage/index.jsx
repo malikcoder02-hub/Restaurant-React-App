@@ -6,6 +6,7 @@ import MenuSection from "./subComponenets/MenuSection";
 import Booking from './subComponenets/Booking';
 import MasterChefs from './subComponenets/MasterChecfs';
 import Testimonials from './subComponenets/Testimonials';
+import Footer from '../../common/footer';
 
 const Homepage = () => {
   return (
@@ -17,6 +18,7 @@ const Homepage = () => {
         <Booking />
         <MasterChefs />
         <Testimonials />
+        <Footer />
     </>
   )
 }
